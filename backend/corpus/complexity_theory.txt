@@ -1,0 +1,7 @@
+Computational complexity theory classifies problems based on the resources required to solve them. The most important complexity classes are P, NP, NP-complete, and NP-hard. Understanding these classes helps determine whether efficient algorithms exist for a given problem.
+
+The class P contains problems solvable in polynomial time by a deterministic Turing machine. Examples include sorting, shortest path, and minimum spanning tree problems. The class NP contains problems whose solutions can be verified in polynomial time. Every problem in P is also in NP, but whether P equals NP remains one of the most important open questions in computer science.
+
+NP-complete problems are the hardest problems in NP. A problem is NP-complete if it is in NP and every other NP problem can be reduced to it in polynomial time. The first problem proven NP-complete was the Boolean satisfiability problem by Cook and Levin. Other well-known NP-complete problems include the traveling salesman problem, graph coloring, subset sum, and the vertex cover problem.
+
+Approximation algorithms provide near-optimal solutions to NP-hard problems in polynomial time. The approximation ratio measures how close the algorithm's solution is to the optimal solution. For example, the greedy algorithm for vertex cover achieves a 2-approximation ratio. Randomized algorithms use random choices to achieve good expected performance and are useful for problems where deterministic algorithms are too slow or complex to implement efficiently.

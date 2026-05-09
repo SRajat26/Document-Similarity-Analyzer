@@ -1,0 +1,7 @@
+Searching algorithms are fundamental operations in computer science used to find specific elements within data structures. Linear search examines each element sequentially until the target is found or the collection is exhausted. The time complexity of linear search is O(n) in the worst case, making it suitable for small or unsorted datasets.
+
+Binary search is a significantly faster algorithm for searching in sorted arrays. It repeatedly divides the search interval in half, comparing the target with the middle element. If the target is less than the middle element, the search continues in the lower half; otherwise, it continues in the upper half. Binary search has a time complexity of O(log n), which is exponentially faster than linear search for large datasets.
+
+Interpolation search improves upon binary search for uniformly distributed data. Instead of always choosing the middle element, it estimates the position of the target based on its value relative to the minimum and maximum values in the search range. The average time complexity is O(log log n) for uniformly distributed data, but the worst case is O(n) when data is not uniformly distributed.
+
+Search trees and hash tables provide alternative approaches to searching. Binary search trees support O(log n) average-case search operations, while hash tables achieve O(1) average-case lookup. The choice between these data structures depends on whether ordered access is needed and the expected distribution of keys. For range queries and ordered traversal, search trees are preferred over hash tables.

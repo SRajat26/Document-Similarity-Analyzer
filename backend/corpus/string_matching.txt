@@ -1,0 +1,7 @@
+String matching algorithms are crucial in text processing, search engines, and bioinformatics applications. These algorithms find occurrences of a pattern within a larger text efficiently. The naive approach checks every possible position in the text, resulting in O(n * m) time complexity where n is the text length and m is the pattern length.
+
+The Knuth-Morris-Pratt algorithm improves upon the naive approach by using a failure function to avoid re-examining characters. The failure function, also called the longest proper prefix which is also suffix array, is precomputed in O(m) time. The overall KMP algorithm runs in O(n + m) time, making it significantly faster than the naive approach for large texts.
+
+The Rabin-Karp algorithm uses hashing to find pattern matches. It computes a rolling hash of the text window and compares it with the pattern hash. When hashes match, a character-by-character comparison confirms the match. The average time complexity is O(n + m), but the worst case is O(n * m) due to hash collisions. The rolling hash technique allows updating the hash value in constant time when sliding the window.
+
+Suffix arrays provide an efficient data structure for multiple pattern matching queries on the same text. A suffix array is a sorted array of all suffixes of the text. Combined with the longest common prefix array, suffix arrays enable binary search for pattern occurrences in O(m * log n) time. The suffix array can be constructed in O(n * log^2 n) time using the prefix doubling technique, or in O(n) time using more advanced algorithms.

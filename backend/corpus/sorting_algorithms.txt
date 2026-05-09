@@ -1,0 +1,7 @@
+Sorting algorithms are fundamental to computer science and are studied extensively in data structures and algorithms courses. The most common sorting algorithms include bubble sort, insertion sort, selection sort, merge sort, quick sort, and heap sort. Each algorithm has different time and space complexity characteristics that make them suitable for different scenarios.
+
+Merge sort uses a divide and conquer approach to sort elements. It recursively divides the array into two halves, sorts each half, and then merges the sorted halves together. The time complexity of merge sort is O(n log n) in all cases, making it one of the most efficient comparison-based sorting algorithms. However, merge sort requires O(n) additional space for the merging process.
+
+Quick sort also uses divide and conquer but partitions the array around a pivot element. The average case time complexity is O(n log n), but the worst case is O(n squared) when the pivot selection is poor. Despite this, quick sort is often faster in practice due to better cache performance and lower constant factors. In-place partitioning makes quick sort more memory efficient than merge sort.
+
+Heap sort builds a max heap from the input array and repeatedly extracts the maximum element. It guarantees O(n log n) time complexity and uses O(1) additional space, making it an in-place sorting algorithm. However, heap sort has poor cache locality compared to quick sort.

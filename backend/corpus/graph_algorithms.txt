@@ -1,0 +1,7 @@
+Graph algorithms form an essential part of computer science, enabling the modeling and solving of numerous real-world problems. A graph consists of vertices and edges, where edges represent connections between vertices. Graphs can be directed or undirected, weighted or unweighted, and may contain cycles or be acyclic.
+
+Breadth-first search and depth-first search are fundamental graph traversal algorithms. BFS explores vertices level by level using a queue data structure, making it suitable for finding shortest paths in unweighted graphs. DFS explores as deep as possible along each branch before backtracking, using a stack or recursion. Both algorithms have a time complexity of O(V + E) where V is the number of vertices and E is the number of edges.
+
+Dijkstra's algorithm finds the shortest path from a source vertex to all other vertices in a weighted graph with non-negative edge weights. It uses a priority queue to greedily select the vertex with the minimum distance. The time complexity is O((V + E) log V) when implemented with a binary heap. For graphs with negative edge weights, the Bellman-Ford algorithm must be used instead, which has a time complexity of O(V * E).
+
+Minimum spanning tree algorithms like Kruskal's and Prim's find the subset of edges that connects all vertices with the minimum total edge weight. Kruskal's algorithm sorts edges by weight and uses a disjoint set union-find structure, while Prim's algorithm grows the tree from a starting vertex using a priority queue.

@@ -1,0 +1,7 @@
+Divide and conquer is a fundamental algorithm design paradigm that solves problems by recursively breaking them into smaller subproblems, solving each subproblem independently, and combining the solutions. This approach is used in many efficient algorithms including merge sort, quick sort, binary search, and the fast Fourier transform.
+
+The divide and conquer approach consists of three steps: divide the problem into smaller subproblems, conquer each subproblem recursively, and combine the solutions of the subproblems to solve the original problem. The efficiency of divide and conquer algorithms depends on how the problem is divided and how the solutions are combined.
+
+The Master Theorem provides a framework for analyzing the time complexity of divide and conquer algorithms. For recurrences of the form T(n) = aT(n/b) + f(n), the theorem gives three cases based on the relationship between f(n) and n^(log_b a). This enables quick determination of asymptotic time complexity without solving the recurrence explicitly.
+
+Binary search is the simplest example of divide and conquer, finding an element in a sorted array in O(log n) time. Strassen's matrix multiplication algorithm uses divide and conquer to multiply two n by n matrices in O(n^2.807) time, improving upon the naive O(n^3) algorithm. The closest pair of points problem can be solved in O(n log n) time using divide and conquer, compared to the O(n^2) brute force approach. The maximum subarray problem can also be solved efficiently using divide and conquer in O(n log n) time.
